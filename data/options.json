@@ -1,0 +1,1 @@
+{"IP00_ADDRESS" : "http://192.168.2.115","PANEL_CODE" : "1945",	"PANEL_PASSWORD" : "saa1x5a2","MQTT_ADDRESS" : "192.168.2.204","MQTT_USERNAME" : "mqttbroker",	"MQTT_PASSWORD" : "sittjakusi123","PUBLISH_ROOT"   : "homeassistant/binary_sensor/paradox/","MQTT_YAML_WRITE" : "False" }

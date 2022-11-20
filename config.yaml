@@ -1,0 +1,34 @@
+name: "Paradox IP100 MQTT Adapter"
+version: "0.5"
+slug: "paradox_ip100_mqtt"
+description: "Read alarm data from IP100 web module and Publish to MQTT broker."
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+#image: "maisken/paradox-ip150-{arch}"
+init: false
+#url: "https://github.com/maisken/Paradox_IP150"
+startup: "services"
+boot: "auto"
+panel_icon: "mdi:shield-home"
+options:
+  IP00_ADDRESS: "http://192.168.2.115"
+  PANEL_CODE: "1945"
+  PANEL_PASSWORD: "saa1x5a2"
+  MQTT_ADDRESS: "192.168.2.204"
+  MQTT_USERNAME: "mqttbroker"
+  MQTT_PASSWORD: "sittjakusi123"
+  PUBLISH_ROOT: "homeassistant/binary_sensor/paradox/"
+  MQTT_YAML_WRITE: False
+schema:
+  IP00_ADDRESS: "str"
+  PANEL_CODE: "password"
+  PANEL_PASSWORD: "password"
+  MQTT_ADDRESS: "str"
+  MQTT_USERNAME: "str"
+  MQTT_PASSWORD: "password"
+  PUBLISH_ROOT: "str"
+  MQTT_YAML_WRITE: bool?
